@@ -26,3 +26,11 @@ class Rodar(threading.Thread):
         for i in range(5): #Avanzamos 5 y en intervalos de 1 segundo
             print('.')
             time.sleep(1)
+
+class Girar(threading.Thread):
+    def __init__(self) :
+        super().__init__()
+    def avanzar1(self):
+        for i in range(3): #Giramos 3 pasos en intervalos de 1 segundo
+            print('->')
+            time.sleep(1)
