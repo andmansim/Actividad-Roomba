@@ -1,4 +1,5 @@
 import time
+import threading #Esto lo añadimos en la segunda parte
 class Coche:
     def rodar(self):
         print('Avanza el coche')
@@ -17,3 +18,11 @@ while True:
     audi.girar()
 
 #Hacemos programacion concurrente para resolver este problema
+
+class Rodar(threading.Thread):
+    def __init__(self) :
+        super().__init__()
+    def avanzar(self):
+        for i in range(5): #Avanzamos 5 y en intervalos de 1 segundo
+            print('.')
+            time.sleep(1)
