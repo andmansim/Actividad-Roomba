@@ -1,6 +1,6 @@
 import time
 import threading #Esto lo añadimos en la segunda parte
-class Coche:
+'''class Coche:
     def rodar(self):
         print('Avanza el coche')
         for i in range(10):#Hace que el coche avance 10 veces con un segundo de separación
@@ -16,7 +16,7 @@ while True:
     audi.rodar()
     #Primero avanza y después gira, no puede hacer los dos movimientos simultaneamente
     audi.girar()
-
+'''
 #Hacemos programacion concurrente para resolver este problema
 
 class Rodar(threading.Thread):
@@ -43,3 +43,6 @@ class Coche():
     def arrancar(self):
         self.rodar.start() #El método start del threat llama a los dos avanzar de cada clase y se ejecutan a la vez.
         self.girar.start()
+
+mercedes = Coche()
+mercedes.arrancar()
