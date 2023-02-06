@@ -30,7 +30,16 @@ class Rodar(threading.Thread):
 class Girar(threading.Thread):
     def __init__(self) :
         super().__init__()
-    def avanzar1(self):
+    def avanzar(self):
         for i in range(3): #Giramos 3 pasos en intervalos de 1 segundo
             print('->')
             time.sleep(1)
+
+class Coche():
+    def __init__(self):
+        self.rodar = Rodar()
+        self.girar=Girar()
+    
+    def arrancar(self):
+        self.rodar.start() #El método start del threat llama a los dos avanzar de cada clase y se ejecutan a la vez.
+        self.girar.start()
