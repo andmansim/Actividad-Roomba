@@ -22,7 +22,7 @@ while True:
 class Rodar(threading.Thread):
     def __init__(self) :
         super().__init__()
-    def avanzar(self):
+    def run(self):
         for i in range(5): #Avanzamos 5 y en intervalos de 1 segundo
             print('.')
             time.sleep(1)
@@ -30,7 +30,7 @@ class Rodar(threading.Thread):
 class Girar(threading.Thread):
     def __init__(self) :
         super().__init__()
-    def avanzar(self):
+    def run(self): #El run es una palabra clave
         for i in range(3): #Giramos 3 pasos en intervalos de 1 segundo
             print('->')
             time.sleep(1)
@@ -40,9 +40,9 @@ class Coche():
         self.rodar = Rodar()
         self.girar=Girar()
     
-    def arrancar(self):
+    def run(self):
         self.rodar.start() #El método start del threat llama a los dos avanzar de cada clase y se ejecutan a la vez.
         self.girar.start()
 
 mercedes = Coche()
-mercedes.arrancar()
+mercedes.run()
