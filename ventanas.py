@@ -10,3 +10,10 @@ class Coche:
         print('Giramos a la derecha') #Esto lo hacemos durante un segundo
         time.sleep(1)#Esperamos un seg
         
+audi = Coche()
+while True:
+    audi.rodar()
+    #Primero avanza y después gira, no puede hacer los dos movimientos simultaneamente
+    audi.girar()
+
+#Hacemos programacion concurrente para resolver este problema
