@@ -22,6 +22,16 @@ class Ventana(Frame):
         t.goto(-250, 165)
         t.end_fill()
         
+        #Zona 2
+        t.fillcolor("orange")
+        t.pencolor('orange')
+        t.begin_fill()
+        t.goto(-250, -315)
+        t.goto(-149, -315)
+        t.goto(-149, 165)
+        t.goto(-250, 165)
+        t.end_fill()
+        
         self.c.mainloop()
 
 ventana = Ventana() #Ventana digievolucionada
