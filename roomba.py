@@ -24,7 +24,22 @@ class Ventana(Frame):
         self.t.penup()
         self.t.goto(x, y)
         self.t.pendown()
-        '''
+       
+        
+ventana = Ventana() #Ventana digievolucionada
+ventana.cambiar(-250,165)
+ventana.zona('pink', 250, 165, -250, 315)
+ventana.cambiar(-250,-315)
+ventana.zona('light green', -149, -315, -250, 165)
+ventana.cambiar(-59,-315)
+ventana.zona('light blue', 250, -315, -59, 165)
+ventana.cambiar(-149,-315)
+ventana.zona('violet', -149, -95, -59, -315)
+
+ventana.mainloop()
+
+
+'''
         self.t.fillcolor("pink")
         self.t.pencolor('pink')
         self.t.begin_fill()
@@ -72,13 +87,3 @@ class Ventana(Frame):
         
         self.c.mainloop()
         '''
-        
-ventana = Ventana() #Ventana digievolucionada
-ventana.cambiar(-250,165)
-ventana.zona('pink', 250, 165, -250, 315)
-ventana.zona('light green', -250, -315, -149, 165)
-ventana.cambiar(-59,165)
-ventana.zona('light blue', -59, -315, 250, 165)
-ventana.zona('violet', -59, -95, --149, -315)
-
-ventana.mainloop()
