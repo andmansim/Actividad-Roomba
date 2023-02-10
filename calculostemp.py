@@ -18,7 +18,7 @@ area3 = calculoarea(309, 480)
 tiempo3 = calculotiempo(area3, vel)
 area4 = calculoarea(90, 220)
 tiempo4 = calculotiempo(area4, vel)
-
+print('El tiempo que tarda en limpiar cada zona es de: ')
 print(tiempo1, tiempo2, tiempo3, tiempo4)
 tiempoT = tiempo3 + tiempo1 + tiempo2 + tiempo4
 print('El tiempo total que tarda en limpiar la habitacion es: ' + str(tiempoT) + 'min')
