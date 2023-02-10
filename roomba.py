@@ -1,8 +1,6 @@
 '''from tkinter import Frame, Label, Scale
 from tkinter import LEFT, HORIZONTAL'''
-from PyQt5.QtWidgets import QMainWindow, QApplication
-import sys 
-from PyQt5.QtWidgets import QMainWindow, QApplication, QWidget, QLabel, QSpinBox, QLineEdit, QHBoxLayout, QComboBox 
+ 
 
 '''class Ventana(Frame):
     def __init__(self, master = None):
@@ -34,11 +32,3 @@ ventanuca = Ventana()
 ventanuca.mainloop() '''
 
 
-class MainWindow(QMainWindow): 
-    def __init__(self): 
-        super(MainWindow, self).__init__() 
- 
-app = QApplication(sys.argv) 
-window = MainWindow() 
-window.show()
-sys.exit(app.exec_()) 
