@@ -19,6 +19,11 @@ class Ventana(Frame):
         self.t.goto(x1, y)
         self.t.end_fill()
         
+    def cambiar(self, x, y):
+        
+        self.t.penup()
+        self.t.goto(x, y)
+        self.t.pendown()
         '''
         self.t.fillcolor("pink")
         self.t.pencolor('pink')
@@ -69,9 +74,11 @@ class Ventana(Frame):
         '''
         
 ventana = Ventana() #Ventana digievolucionada
+ventana.cambiar(-250,165)
 ventana.zona('pink', 250, 165, -250, 315)
-ventana.zona('pink', 250, 165, -250, 315)
-ventana.zona('pink', 250, 165, -250, 315)
-ventana.zona('pink', 250, 165, -250, 315)
+ventana.zona('light green', -250, -315, -149, 165)
+ventana.cambiar(-59,165)
+ventana.zona('light blue', -59, -315, 250, 165)
+ventana.zona('violet', -59, -95, --149, -315)
 
 ventana.mainloop()
