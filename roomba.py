@@ -1,5 +1,5 @@
 from turtle import*
-import tkinter as tk
+from tkinter import*
 
 class Ventana(Frame):
     def __init__(self, master = None):
