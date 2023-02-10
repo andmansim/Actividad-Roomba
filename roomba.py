@@ -9,8 +9,9 @@ class Ventana(Frame):
         self.c.pack()
     def pintar(self):
         t = RawTurtle(self.c)
-        t.pencolor('white')
+        t.penup()
         t.goto(-250, 165)
+        t.pendown()
         
         #Zona 1
         t.fillcolor("green")
@@ -44,6 +45,20 @@ class Ventana(Frame):
         t.goto(250, 165)
         t.goto(-59, 165)
         t.end_fill()
+        
+        #Zona 4
+        t.fillcolor("purple")
+        t.penup()
+        t.goto(-59,-315)
+        t.pendown()
+        t.pencolor('purple')
+        t.begin_fill()
+        t.goto(-59, -95)
+        t.goto(-149, -95)
+        t.goto(-149, -315)
+        t.goto(-59, -315)
+        t.end_fill()
+        
         self.c.mainloop()
 
 ventana = Ventana() #Ventana digievolucionada
