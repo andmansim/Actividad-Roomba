@@ -8,8 +8,8 @@ def calculotiempo(a, v): #a: area, v: velocidad
     tiempo = tiempo/60
     return tiempo
 
-print('El roomba va a una velocidad de 0.5m/s')
-vel = 0.5#m/s
+print('El roomba va a una velocidad de 0.5m2/s')
+vel = 0.5#m2/s
 area1 = calculoarea(500, 150)
 tiempo1 = calculotiempo(area1, vel)
 area2 = calculoarea(101, 480)
