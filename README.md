@@ -258,3 +258,4 @@ print('El tiempo total que tarda en limpiar la habitacion es: ' + str(tiempoT) +
 print('Es decir, ' + str(tiempoT/60) + 'h')
 ```
 ![caproomba](/imagenes/caproomba.png)
+![caproomba2](/imagenes/caproomba2.png)
