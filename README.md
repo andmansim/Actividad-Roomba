@@ -132,6 +132,8 @@ window = MainWindow()
 window.show()
 sys.exit(app.exec_())
 ```
+![imagenes/capcoches.png]
+
 # Tkinter
 ```
 from tkinter import Frame, Label, Scale
