@@ -133,7 +133,7 @@ window = MainWindow()
 window.show()
 sys.exit(app.exec_())
 ```
-![Ventanuca](Ventanuca.png)
+![Ventanuca](/imagenes/Ventanuca.png)
 
 # Tkinter
 ```
