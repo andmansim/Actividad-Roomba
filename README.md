@@ -255,3 +255,4 @@ tiempoT = tiempo3 + tiempo1 + tiempo2 + tiempo4
 print('El tiempo total que tarda en limpiar la habitacion es: ' + str(tiempoT) + 'min')
 print('Es decir, ' + str(tiempoT/60) + 'h')
 ```
+![caproomba](/imagenes/caproomba.png)
