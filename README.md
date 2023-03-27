@@ -74,6 +74,7 @@ bloqueo2 = threading.Lock()
 mercedes = Coche()
 mercedes.run()
 ```
+![capcoches](/imagenes/capcoches.png)
 # Qt
 ```
 from PyQt5.QtWidgets import QMainWindow, QApplication
@@ -132,7 +133,7 @@ window = MainWindow()
 window.show()
 sys.exit(app.exec_())
 ```
-![imagenes/capcoches.png]
+
 
 # Tkinter
 ```
