@@ -182,6 +182,8 @@ ventanuca = Ventana()
 ventanuca.initWidgets()
 ventanuca.mainloop() 
 ```
+![capventanas](/imagenes/cap_ventanasTkinter.png)
+
 # Roomba
 ```
 from turtle import*
